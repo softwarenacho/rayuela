@@ -1,0 +1,38 @@
+<h2>Stats</h2>
+
+<table>
+  
+  <thead class= "stats_thead">
+    <th>Name</th>
+    <th>Games played</th>
+    <th>Wins</th>
+    <th>Ties</th>
+    <th>Losses</th>
+    <th>Success Rate</th>
+  </thead>
+
+  <tbody  class= "stats_tbody">
+    <tr>
+      <td><%= @player1.name %></td>
+      <td><%= @p1_stats[0] %></td>
+      <td><%= @p1_stats[1] %></td>
+      <td><%= @p1_stats[2] %></td>
+      <td><%= @p1_stats[3] %></td>
+      <td><%= @p1_stats[4] %>%</td>
+    </tr>
+    <tr>
+      <td><%= @player2.name %></td>
+      <td><%= @p2_stats[0] %></td>
+      <td><%= @p2_stats[1] %></td>
+      <td><%= @p2_stats[2] %></td>
+      <td><%= @p2_stats[3] %></td>
+      <td><%= @p2_stats[4] %>%</td>
+    </tr>
+  </tbody>
+
+</table>
+
+  <br>
+<div class="button">
+  <a id="new_players" href="/">New Game</a>
+</div>

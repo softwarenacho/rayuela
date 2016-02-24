@@ -1,0 +1,42 @@
+<div class="button">
+  <a id="new_game" href="">
+    Play
+    <input type="hidden" name="player1" value=<%= @player1.name %>>
+    <input type="hidden" name="player2" value=<%= @player2.name %>>
+  </a>
+</div>
+<br>
+<div id="counter_div"></div>
+<br>
+
+<table class="table">
+  <tr id="player1">
+    <td class="player_name"><%= @player1.name %></td>
+    <td class="td_game active" id="p1_1"></td>
+    <% position = 2 %>
+    <% 98.times do %>
+      <td class="td_game" id="p1_<%=position%>"></td>
+      <% position += 1 %>
+    <% end %>
+    <td class="td_game td_final" id="p1_100"></td>
+  </tr>
+  <tr id="player2">
+    <td class="player_name"><%= @player2.name %></td>
+    <td class="td_game active" id="p2_1"></td>
+    <% position = 2 %>
+    <% 98.times do %>
+      <td class="td_game" id="p2_<%=position%>"></td>
+      <% position += 1 %>
+    <% end %>
+    <td class="td_game td_final" id="p2_100"></td>
+  </tr>
+</table>
+
+<br>
+
+<h3>Player 1 press "a" - Player 2 press "5"</h3>
+
+<br>
+
+ <div id="unlock_buttons"></div>
+
